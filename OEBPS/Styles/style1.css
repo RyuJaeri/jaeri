@@ -1,0 +1,309 @@
+@charset "utf-8";
+@font-face {
+	font-family: "kpb";
+	font-style: normal;
+	font-weight: normal;
+	src: url(../Fonts/KoPubBatangMedium.ttf);
+}
+@font-face {
+	font-family: "kpb";
+	font-style: normal;
+	font-weight: bold;
+	src: url(../Fonts/KoPubBatangBold.ttf);
+}
+@font-face {
+	font-family: "kpd";
+	font-style: normal;
+	font-weight: normal;
+	src: url(../Fonts/KoPubDotumMedium.ttf);
+}
+
+/* 기본 스타일 */
+body {
+    margin: 1em;
+    font-family: "kpd", sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 1.5em;
+    font-family: "kpb", serif;
+}
+
+h2 {
+    color: #666;
+    margin-top: 1.5em;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5em;
+}
+
+/* 동물 페이지 스타일 */
+.video-intro {
+    margin: 2em 0;
+}
+
+.video-intro p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 1.5em;
+}
+
+.video-container {
+    margin: 2em 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+video {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5em;
+    margin: 1.5em 0;
+}
+
+.info-item {
+    background-color: #f9f9f9;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.info-item h3 {
+    color: #ff6b6b;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.info-item p {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.video-description ul {
+    list-style-type: none;
+    padding-left: 0;
+    background-color: #f5f5f5;
+    padding: 1.5em;
+    border-radius: 8px;
+}
+
+.video-description li {
+    margin: 0.8em 0;
+    padding-left: 1.5em;
+    position: relative;
+}
+
+.video-description li:before {
+    content: "🐱";
+    position: absolute;
+    left: 0;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1em;
+    margin: 1.5em 0;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.02);
+}
+
+/* 기존 스타일 유지 */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.my_tbl {
+	width: 100%;
+	font-family: "kpd", sans-serif;
+	font-size: 0.9em;
+	border: 2px solid #333;
+}
+.my_tbl th, .my_tbl td {
+	padding: 0.5em;
+	border: 1px solid #666;
+}
+.my_tbl colgroup.col1 {
+	width: 7.5em;
+	background-color: #ddf;
+}
+.my_tbl th.off {
+	background-color: #eee;
+}
+
+/* 이미지 스타일 */
+.my_tbl img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* K-pop 특화 스타일 */
+.kpop-intro p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.intro-image img {
+    max-width: 100%;
+    height: auto;
+    margin: 1em 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.history-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 1em 0;
+    justify-content: center;
+}
+
+.history-images img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.kpop-history ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.kpop-history li {
+    margin: 1em 0;
+    padding: 0.5em;
+    background-color: #f9f9f9;
+    border-left: 4px solid #ff6b6b;
+}
+
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 1em 0;
+}
+
+.feature-item {
+    flex: 1;
+    min-width: 200px;
+    padding: 1em;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.feature-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1em 0;
+}
+
+.feature-item h3 {
+    color: #ff6b6b;
+    margin-top: 0;
+}
+
+.group-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin: 2em 0;
+    justify-content: center;
+}
+
+.group-item {
+    text-align: center;
+}
+
+.group-item img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin-bottom: 1em;
+}
+
+.group-item h3 {
+    color: #ff6b6b;
+    margin: 0.5em 0;
+}
+
+.kpop-table {
+    width: 100%;
+    margin: 1em 0;
+    border-collapse: collapse;
+}
+
+.kpop-table th {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 0.8em;
+}
+
+.kpop-table td {
+    padding: 0.8em;
+    border: 1px solid #ddd;
+}
+
+.kpop-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.impact-image {
+    margin: 2em 0;
+    text-align: center;
+}
+
+.impact-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.kpop-impact ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.kpop-impact li {
+    margin: 0.8em 0;
+    padding-left: 1.5em;
+    position: relative;
+}
+
+.kpop-impact li:before {
+    content: "★";
+    color: #ff6b6b;
+    position: absolute;
+    left: 0;
+}

@@ -1,0 +1,24 @@
+nav#toc {
+    margin: 1em;
+}
+
+nav#toc h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+nav#toc ol {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+nav#toc li {
+    margin: 0.5em 0;
+}
+
+nav#toc a {
+    text-decoration: none;
+    color: #0066cc;
+} 
